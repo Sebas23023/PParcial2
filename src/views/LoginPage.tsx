@@ -1,0 +1,9 @@
+// src/views/LoginPage.tsx
+import React from 'react';
+import AuthForm from '../components/AuthForm';
+
+const LoginPage: React.FC = () => {
+  return <AuthForm mode="login" />;
+};
+
+export default LoginPage;

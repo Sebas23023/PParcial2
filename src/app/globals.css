@@ -1,33 +1,135 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* src/app/globals.css */
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1b1b1b; /* Dark background */
+    color: #e2e2e2; /* Light text */
+    line-height: 1.6;
   }
-}
+  
+  header {
+    background-color: #0a74da; /* Blue background */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  header nav button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  header nav button:hover {
+    background-color: #005bb5; /* Darker blue */
+    border-radius: 4px;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  button {
+    background-color: #ffcc00; /* Gold background */
+    color: black; /* Black text */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e6b800; /* Darker gold */
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #333; /* Dark input background */
+    color: #e2e2e2; /* Light text */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #333; /* Dark background */
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  li h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  li p {
+    margin-bottom: 1rem;
+  }
+  
+  li button {
+    margin-right: 0.5rem;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    background: none;
+    border: none;
+    color: #ffcc00; /* Gold text */
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  nav ul li:hover {
+    text-decoration: underline;
+  }
+  
